@@ -1,13 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace PatternProject.Domain.Entities.Base
+﻿namespace PatternProject.Domain.Entities.Base
 {
-    public class ObjectResponse
+    public class ObjectResponse<T>
     {
-
+        public int Code { get; set; }
+        public string Message { get; set; }
+        public T Item { get; set; }
     }
 }

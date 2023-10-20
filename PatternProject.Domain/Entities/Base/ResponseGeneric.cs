@@ -1,12 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace PatternProject.Domain.Entities.Base
+﻿namespace PatternProject.Domain.Entities.Base
 {
     public class ResponseGeneric
     {
+        #region PROPERTIES
+        public int Code { get; set; }
+        public string Message { get; set; }
+        #endregion
     }
 }

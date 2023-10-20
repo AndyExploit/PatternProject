@@ -1,13 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace PatternProject.Domain.Entities.Base
+﻿namespace PatternProject.Domain.Entities.Base
 {
-    public class ExecuteQueryResponse
+    public class ExecuteQueryResponse<T>
     {
-
+        #region PROPERTIES
+        public int RowsAffected { get; set; }
+        public string Message { get; set; }
+        public T ReturnValue { get; set; }
+        #endregion
     }
 }
